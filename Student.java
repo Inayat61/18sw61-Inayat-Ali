@@ -1,21 +1,29 @@
-class Student
-{
-	int age;
-	String name;
-	String rollNo;
-	String dept;
-	public Student(String name,String rollNo,String dept,int age)
-	{
+class Student{
+	private int rollno;
+	private String name;
+	
+	public Student(int rollno, String name){
+		this.rollno=rollno;
 		this.name=name;
-		this.rollNo=rollNo;
-		this.dept=dept;
-		this.age=age;
 	}
-	public void getDetails()
-	{
-		System.out.println("Name of Student: "+name);
-		System.out.println("Roll Number:  "+rollNo);
-		System.out.println("Department:  "+dept);
-		System.out.println("Age of Student: "+age);
+	
+	public void setName(String name){
+		this.name=name;
+	}
+	
+	public String getName(){
+		return name;
+	}
+	
+	public void setRollno(int rollno){
+		this.rollno=rollno;
+	}
+	
+	public int getRollno(){
+		return rollno;
+	}
+	
+	public void useArray(Student[] std){
+		std[0].setName("Sheeraz");
 	}
 }

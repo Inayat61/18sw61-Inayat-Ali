@@ -1,18 +1,19 @@
 class Print
 {
-public static void main(String []arg)
-  { 
-   float a=3.1f;
-   float b=2.2f;
-   float c=1.2f;
-  float d=4.1f;
-   float e=1.3f;
-System.out.println("Sum: "+a+b+c+d+e);
-System.out.println("Average: "+(a+b+c+d+e)/5);
-   }  
-   
-
-
-
-
+	public void getAll(int name,char spell)
+	{
+		System.out.println(name+"  "+spell);
+	}	
+	
+	public void getAll(char spell,int name)
+	{
+		System.out.println(name+"  "+spell);
+	}
+	public static void main (String []arg)
+	{
+		Print p=new Print();
+		p.getAll(1,'a');
+		p.getAll('b',2);
+	}
+	
 }
